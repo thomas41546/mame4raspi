@@ -480,6 +480,7 @@ static void verify_length_and_hash(romload_private *romdata, const char *name, U
 
 static void display_loading_rom_message(romload_private *romdata, const char *name, bool from_list)
 {
+	return;//pyrx
 	char buffer[200];
 
 	if (name != NULL)

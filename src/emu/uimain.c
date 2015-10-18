@@ -2709,8 +2709,9 @@ void ui_menu_select_game::populate()
 	/* if we're forced into this, allow general input configuration as well */
 	if (ui_menu::stack_has_special_main_menu())
 	{
-		item_append(MENU_SEPARATOR_ITEM, NULL, 0, NULL);
-		item_append("Configure General Inputs", NULL, 0, (void *)1);
+		//pyrx
+		//item_append(MENU_SEPARATOR_ITEM, NULL, 0, NULL);
+		//item_append("Configure General Inputs", NULL, 0, (void *)1);
 	}
 
 	/* configure the custom rendering */
@@ -2783,9 +2784,9 @@ void ui_menu_select_game::custom_render(void *selectedref, float top, float bott
 
 	/* display the current typeahead */
 	if (search[0] != 0)
-		tempbuf[0].printf("Type name or select: %s_", search);
+		tempbuf[0].printf("Select a game with joystick and press S button.");
 	else
-		tempbuf[0].printf("Type name or select: (random)");
+		tempbuf[0].printf("Select a game with joystick and press S button.");
 
 	/* get the size of the text */
 	ui_draw_text_full(container, tempbuf[0], 0.0f, 0.0f, 1.0f, JUSTIFY_CENTER, WRAP_TRUNCATE,

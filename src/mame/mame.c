@@ -20,16 +20,9 @@
 #define CAPSTARTGAMENOUN        "Game"
 #define GAMENOUN                "game"
 #define GAMESNOUN               "games"
-#define COPYRIGHT               "Copyright Nicola Salmoria\nand the MAME team\nhttp://mamedev.org"
+#define COPYRIGHT               "A gift to Janet Mark.\nFrom: Vern, Scott, Jessica and Thomas."
 #define COPYRIGHT_INFO          "Copyright Nicola Salmoria and the MAME team"
-#define DISCLAIMER              "MAME is an emulator: it reproduces, more or less faithfully, the behaviour of\n" \
-								"several arcade machines. But hardware is useless without software, so an image\n" \
-								"of the ROMs which run on that hardware is required. Such ROMs, like any other\n" \
-								"commercial software, are copyrighted material and it is therefore illegal to\n" \
-								"use them if you don't own the original arcade machine. Needless to say, ROMs\n" \
-								"are not distributed together with MAME. Distribution of MAME together with ROM\n" \
-								"images is a violation of copyright law and should be promptly reported to the\n" \
-								"authors so that appropriate legal action can be taken.\n"
+#define DISCLAIMER              "Nodisclaimer"
 #define USAGE                   "Usage:  %s [%s] [options]"
 #define XML_ROOT                "mame"
 #define XML_TOP                 "game"

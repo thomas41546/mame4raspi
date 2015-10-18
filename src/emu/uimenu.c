@@ -186,7 +186,7 @@ void ui_menu::reset(ui_menu_reset_options options)
 	if (parent == NULL)
 		item_append(backtext.cstr(), NULL, 0, NULL);
 	else if (parent->is_special_main_menu())
-		item_append("Exit", NULL, 0, NULL);
+		item_append("-", NULL, 0, NULL);
 	else
 		item_append("Return to Previous Menu", NULL, 0, NULL);
 }
@@ -823,9 +823,9 @@ void ui_menu::handle_keys(UINT32 flags)
 	if (exclusive_input_pressed(IPT_UI_SELECT, 0))
 	{
 		if (selected == numitems - 1)
-		{
-			menu_event.iptkey = IPT_UI_CANCEL;
-			ui_menu::stack_pop(machine());
+		{	//pyrx
+			//menu_event.iptkey = IPT_UI_CANCEL;
+			//ui_menu::stack_pop(machine());
 		}
 		return;
 	}
@@ -833,7 +833,8 @@ void ui_menu::handle_keys(UINT32 flags)
 	/* hitting cancel also pops the stack */
 	if (exclusive_input_pressed(IPT_UI_CANCEL, 0))
 	{
-		ui_menu::stack_pop(machine());
+		//pyrx
+		//ui_menu::stack_pop(machine());
 		return;
 	}
 
